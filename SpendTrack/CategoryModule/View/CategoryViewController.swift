@@ -9,9 +9,12 @@ import UIKit
 
 class CategoryViewController: UIViewController {
 
+    @IBOutlet weak var mockLabel: UILabel!
+    
+    var text = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        mockLabel.text = text
         // Do any additional setup after loading the view.
     }
     
