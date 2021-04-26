@@ -9,9 +9,11 @@ import Foundation
 
 struct SingleResult: Decodable{
     var title: String
-    var link: URL?
+    var link: String
     var price: Int
+    var price_raw: String
+    var snippet: String?
     //var price_parsed: Price
     var merchant: String
-    var image: URL?
+    var image: String
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		699E0F6E26346FA6002CA527 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E0F6D26346FA6002CA527 /* MainTabBarViewController.swift */; };
+		699E0F73263478EA002CA527 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E0F72263478EA002CA527 /* SearchTableViewController.swift */; };
+		699E0F7626347D6E002CA527 /* SearchItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E0F7526347D6E002CA527 /* SearchItemsViewController.swift */; };
 		69A0C46625E2863400170318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C46525E2863400170318 /* AppDelegate.swift */; };
 		69A0C46825E2863400170318 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C46725E2863400170318 /* SceneDelegate.swift */; };
 		69A0C46D25E2863400170318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A0C46B25E2863400170318 /* Main.storyboard */; };
@@ -23,8 +26,6 @@
 		69A0C4A525E402E400170318 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C4A425E402E400170318 /* CategoryViewController.swift */; };
 		69A0C4A925E4060E00170318 /* ReviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C4A825E4060E00170318 /* ReviewPresenter.swift */; };
 		69A0C4AE25E4062600170318 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C4AD25E4062600170318 /* ReviewViewController.swift */; };
-		69A0C4B325E4066C00170318 /* SearchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C4B225E4066C00170318 /* SearchListViewController.swift */; };
-		69A0C4B725E4068C00170318 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C4B625E4068C00170318 /* SearchTableViewController.swift */; };
 		69A0C4BB25E406A800170318 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C4BA25E406A800170318 /* SearchPresenter.swift */; };
 		69A0C4C025E406F700170318 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C4BF25E406F700170318 /* SearchViewCell.swift */; };
 		69A0C4C525E4073E00170318 /* BoughtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C4C425E4073E00170318 /* BoughtViewController.swift */; };
@@ -41,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		097B46DE0929B1203DF3C7AF /* Pods-SpendTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendTrack.release.xcconfig"; path = "Target Support Files/Pods-SpendTrack/Pods-SpendTrack.release.xcconfig"; sourceTree = "<group>"; };
+		699E0F6D26346FA6002CA527 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		699E0F72263478EA002CA527 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		699E0F7526347D6E002CA527 /* SearchItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsViewController.swift; sourceTree = "<group>"; };
 		69A0C46225E2863400170318 /* SpendTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A0C46525E2863400170318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69A0C46725E2863400170318 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,8 +63,6 @@
 		69A0C4A425E402E400170318 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		69A0C4A825E4060E00170318 /* ReviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPresenter.swift; sourceTree = "<group>"; };
 		69A0C4AD25E4062600170318 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
-		69A0C4B225E4066C00170318 /* SearchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListViewController.swift; sourceTree = "<group>"; };
-		69A0C4B625E4068C00170318 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		69A0C4BA25E406A800170318 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		69A0C4BF25E406F700170318 /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
 		69A0C4C425E4073E00170318 /* BoughtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoughtViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				69A0C46B25E2863400170318 /* Main.storyboard */,
 				69A0C47325E2863700170318 /* Info.plist */,
 				69A0C4DE25E40BE000170318 /* Coming soon... */,
+				699E0F6D26346FA6002CA527 /* MainTabBarViewController.swift */,
 			);
 			path = SpendTrack;
 			sourceTree = "<group>";
@@ -219,8 +222,8 @@
 		69A0C4B925E4069100170318 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				69A0C4B625E4068C00170318 /* SearchTableViewController.swift */,
-				69A0C4B225E4066C00170318 /* SearchListViewController.swift */,
+				699E0F72263478EA002CA527 /* SearchTableViewController.swift */,
+				699E0F7526347D6E002CA527 /* SearchItemsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				69A0C49325E3FF7400170318 /* MainViewController.swift in Sources */,
 				69A0C4C925E4074F00170318 /* BoughtPresenter.swift in Sources */,
 				69A0C4D825E4083600170318 /* DetailViewController.swift in Sources */,
+				699E0F6E26346FA6002CA527 /* MainTabBarViewController.swift in Sources */,
 				69A0C48425E3FD6500170318 /* NetworkService.swift in Sources */,
 				69A0C4AE25E4062600170318 /* ReviewViewController.swift in Sources */,
 				69A0C46625E2863400170318 /* AppDelegate.swift in Sources */,
@@ -429,11 +433,10 @@
 				69A0C4A525E402E400170318 /* CategoryViewController.swift in Sources */,
 				69A0C4EE25EF9B4800170318 /* ServerResponse.swift in Sources */,
 				69A0C4A125E402C500170318 /* IndicatorView.swift in Sources */,
-				69A0C4B725E4068C00170318 /* SearchTableViewController.swift in Sources */,
 				69A0C4F125EF9C5A00170318 /* SingleResult.swift in Sources */,
 				69A0C4EB25EF99BD00170318 /* SessionError.swift in Sources */,
-				69A0C4B325E4066C00170318 /* SearchListViewController.swift in Sources */,
 				69A0C46825E2863400170318 /* SceneDelegate.swift in Sources */,
+				699E0F7626347D6E002CA527 /* SearchItemsViewController.swift in Sources */,
 				69A0C48C25E3FF0F00170318 /* MainPresenter.swift in Sources */,
 				69A0C4DC25E4085800170318 /* UpdatingButtonView.swift in Sources */,
 				69A0C49D25E401FB00170318 /* CategoryPresenter.swift in Sources */,
@@ -442,6 +445,7 @@
 				69A0C4C025E406F700170318 /* SearchViewCell.swift in Sources */,
 				69A0C49925E401A400170318 /* ProductListView.swift in Sources */,
 				69A0C4A925E4060E00170318 /* ReviewPresenter.swift in Sources */,
+				699E0F73263478EA002CA527 /* SearchTableViewController.swift in Sources */,
 				69A0C4BB25E406A800170318 /* SearchPresenter.swift in Sources */,
 				69A0C47E25E3FCCD00170318 /* ModuleBuilder.swift in Sources */,
 			);

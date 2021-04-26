@@ -25,7 +25,7 @@ class NetworkService{
         return _urlComps
     }
     
-    private func fetchSearch(query: String, completion: @escaping (Result<[SingleResult], SessionError>) -> Void){
+    func fetchSearchData(query: String, completion: @escaping (Result<[SingleResult], SessionError>) -> Void){
         var urlComps = baseUrlComponent
         urlComps.queryItems? += [
         URLQueryItem(name: "q", value: query),
@@ -69,6 +69,21 @@ class NetworkService{
         }.resume()
     }
     
-    
+    func loadImage(from url: URL?, completion: @escaping (UIImage?) -> Void){
+        guard let url = url else{
+            completion(nil)
+            return
+        }
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            DispatchQueue.main.async {
+                if let data = data{
+                    completion(UIImage(data: data))
+                }
+                else{
+                    completion(nil)
+                }
+            }
+        }.resume()
+    }
     
 }

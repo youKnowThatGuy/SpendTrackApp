@@ -7,15 +7,18 @@
 import Charts
 import UIKit
 
+protocol MainViewProtocol: UIViewController{
+    func updateUI()
+}
+
 class MainViewController: UIViewController, ChartViewDelegate {
     
     var pieChart = PieChartView()
-    var presenter: MainPresenter!
+    var presenter: MainPresenterProtocol!
     let tapReact = UITapGestureRecognizer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = MainPresenter()
         pieChart.delegate = self
         preparePieChart()
         tapReact.addTarget(self, action: #selector(chartTapped) )
@@ -54,10 +57,12 @@ class MainViewController: UIViewController, ChartViewDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        presenter.prepareCategorySegue(for: segue, sender: sender)
+        presenter.prepare(for: segue, sender: sender)
     }
-    
+}
 
-    
-
+extension MainViewController: MainViewProtocol{
+    func updateUI() {
+        print("very good!")
+    }
 }

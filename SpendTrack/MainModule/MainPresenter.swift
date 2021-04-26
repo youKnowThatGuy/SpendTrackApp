@@ -8,8 +8,20 @@
 import Foundation
 import Charts
 
-class MainPresenter{
+protocol MainPresenterProtocol{
+    init(view: MainViewProtocol)
+    func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    func getChartData() -> ChartData
+}
+
+class MainPresenter: MainPresenterProtocol{
+    weak var view: MainViewProtocol?
+    
     private var entries = [ChartDataEntry]()
+    
+    required init(view: MainViewProtocol) {
+        self.view = view
+    }
     
     func getChartData() -> ChartData{
         for x in 0..<10{
@@ -21,7 +33,7 @@ class MainPresenter{
         return data
     }
     
-    func prepareCategorySegue(for segue: UIStoryboardSegue, sender: Any?){
+    func prepare(for segue: UIStoryboardSegue, sender: Any?){
         switch segue.identifier{
         case "categorySegue":
             guard let vc = segue.destination as? CategoryViewController,

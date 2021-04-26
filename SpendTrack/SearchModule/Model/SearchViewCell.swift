@@ -8,7 +8,16 @@
 import UIKit
 
 class SearchViewCell: UITableViewCell {
-
+    static let identifier = "ItemCell"
+    
+    @IBOutlet weak var itemView: UIImageView!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var priceLabel: UILabel!
+    
+    @IBOutlet weak var merchantLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
