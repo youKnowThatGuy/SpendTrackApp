@@ -2,17 +2,21 @@ PODS:
   - Charts (3.6.0):
     - Charts/Core (= 3.6.0)
   - Charts/Core (3.6.0)
+  - SCLAlertView (0.8)
 
 DEPENDENCIES:
   - Charts
+  - SCLAlertView
 
 SPEC REPOS:
   trunk:
     - Charts
+    - SCLAlertView
 
 SPEC CHECKSUMS:
   Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
 
-PODFILE CHECKSUM: d821d91c8c60549f1f5fccc39bdc873e1a7098df
+PODFILE CHECKSUM: 61c98ba58f8f74cdb04b08bef58aba042a3042d9
 
 COCOAPODS: 1.10.1

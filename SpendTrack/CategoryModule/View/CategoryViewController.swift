@@ -11,7 +11,8 @@ class CategoryViewController: UIViewController {
 
     @IBOutlet weak var mockLabel: UILabel!
     
-    var text = ""
+    var text = "bruh"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mockLabel.text = text

@@ -7,4 +7,5 @@ target 'SpendTrack' do
 
 
 pod 'Charts'
+pod 'SCLAlertView'
 end

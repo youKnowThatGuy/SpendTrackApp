@@ -11,7 +11,8 @@ import UIKit
 class NetworkService{
     private init(){}
     static let shared = NetworkService()
-    private let apiKey = "DE2955ADF5814B549899473A5E01FD54"
+    //private let apiKey = "DE2955ADF5814B549899473A5E01FD54" запасной апи ключ
+    private let apiKey = "B8F1B28B6375493EB11C990E0155171E"
     private let amount = 30
     
     private var baseUrlComponent: URLComponents {

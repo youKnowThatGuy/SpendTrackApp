@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		692052F32639A8210004B616 /* ButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692052F22639A8210004B616 /* ButtonViewCell.swift */; };
 		699E0F6E26346FA6002CA527 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E0F6D26346FA6002CA527 /* MainTabBarViewController.swift */; };
 		699E0F73263478EA002CA527 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E0F72263478EA002CA527 /* SearchTableViewController.swift */; };
 		699E0F7626347D6E002CA527 /* SearchItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E0F7526347D6E002CA527 /* SearchItemsViewController.swift */; };
+		699F886426370EE400A72175 /* RAMAnimatedTabBarController in Frameworks */ = {isa = PBXBuildFile; productRef = 699F886326370EE400A72175 /* RAMAnimatedTabBarController */; };
 		69A0C46625E2863400170318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C46525E2863400170318 /* AppDelegate.swift */; };
 		69A0C46825E2863400170318 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C46725E2863400170318 /* SceneDelegate.swift */; };
 		69A0C46D25E2863400170318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A0C46B25E2863400170318 /* Main.storyboard */; };
@@ -20,7 +22,6 @@
 		69A0C48825E3FD8900170318 /* CachingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C48725E3FD8900170318 /* CachingService.swift */; };
 		69A0C48C25E3FF0F00170318 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C48B25E3FF0F00170318 /* MainPresenter.swift */; };
 		69A0C49325E3FF7400170318 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C49225E3FF7400170318 /* MainViewController.swift */; };
-		69A0C49925E401A400170318 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C49825E401A400170318 /* ProductListView.swift */; };
 		69A0C49D25E401FB00170318 /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C49C25E401FB00170318 /* CategoryPresenter.swift */; };
 		69A0C4A125E402C500170318 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C4A025E402C500170318 /* IndicatorView.swift */; };
 		69A0C4A525E402E400170318 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C4A425E402E400170318 /* CategoryViewController.swift */; };
@@ -37,11 +38,14 @@
 		69A0C4EB25EF99BD00170318 /* SessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C4EA25EF99BC00170318 /* SessionError.swift */; };
 		69A0C4EE25EF9B4800170318 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C4ED25EF9B4800170318 /* ServerResponse.swift */; };
 		69A0C4F125EF9C5A00170318 /* SingleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0C4F025EF9C5A00170318 /* SingleResult.swift */; };
+		69A1065F26383CD500ADF76A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 69A1065E26383CD500ADF76A /* Kingfisher */; };
+		69A1066226386CC600ADF76A /* CachedPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1066126386CC600ADF76A /* CachedPurchase.swift */; };
 		99D28B9FE832592BCEA01951 /* Pods_SpendTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D774D971DDD80E2CAAA4C9 /* Pods_SpendTrack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		097B46DE0929B1203DF3C7AF /* Pods-SpendTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendTrack.release.xcconfig"; path = "Target Support Files/Pods-SpendTrack/Pods-SpendTrack.release.xcconfig"; sourceTree = "<group>"; };
+		692052F22639A8210004B616 /* ButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewCell.swift; sourceTree = "<group>"; };
 		699E0F6D26346FA6002CA527 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		699E0F72263478EA002CA527 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		699E0F7526347D6E002CA527 /* SearchItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemsViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +61,6 @@
 		69A0C48725E3FD8900170318 /* CachingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingService.swift; sourceTree = "<group>"; };
 		69A0C48B25E3FF0F00170318 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		69A0C49225E3FF7400170318 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		69A0C49825E401A400170318 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 		69A0C49C25E401FB00170318 /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
 		69A0C4A025E402C500170318 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		69A0C4A425E402E400170318 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		69A0C4EA25EF99BC00170318 /* SessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionError.swift; sourceTree = "<group>"; };
 		69A0C4ED25EF9B4800170318 /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
 		69A0C4F025EF9C5A00170318 /* SingleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleResult.swift; sourceTree = "<group>"; };
+		69A1066126386CC600ADF76A /* CachedPurchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedPurchase.swift; sourceTree = "<group>"; };
 		7495372F2FD1EA8A7F108395 /* Pods-SpendTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendTrack.debug.xcconfig"; path = "Target Support Files/Pods-SpendTrack/Pods-SpendTrack.debug.xcconfig"; sourceTree = "<group>"; };
 		B3D774D971DDD80E2CAAA4C9 /* Pods_SpendTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpendTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A1065F26383CD500ADF76A /* Kingfisher in Frameworks */,
+				699F886426370EE400A72175 /* RAMAnimatedTabBarController in Frameworks */,
 				99D28B9FE832592BCEA01951 /* Pods_SpendTrack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,7 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				69A0C49225E3FF7400170318 /* MainViewController.swift */,
-				69A0C49825E401A400170318 /* ProductListView.swift */,
+				692052F22639A8210004B616 /* ButtonViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 				69A0C4EA25EF99BC00170318 /* SessionError.swift */,
 				69A0C4ED25EF9B4800170318 /* ServerResponse.swift */,
 				69A0C4F025EF9C5A00170318 /* SingleResult.swift */,
+				69A1066126386CC600ADF76A /* CachedPurchase.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +332,10 @@
 			dependencies = (
 			);
 			name = SpendTrack;
+			packageProductDependencies = (
+				699F886326370EE400A72175 /* RAMAnimatedTabBarController */,
+				69A1065E26383CD500ADF76A /* Kingfisher */,
+			);
 			productName = SpendTrack;
 			productReference = 69A0C46225E2863400170318 /* SpendTrack.app */;
 			productType = "com.apple.product-type.application";
@@ -352,6 +363,10 @@
 				Base,
 			);
 			mainGroup = 69A0C45925E2863400170318;
+			packageReferences = (
+				699F886226370EE400A72175 /* XCRemoteSwiftPackageReference "animated-tab-bar" */,
+				69A1065D26383CD500ADF76A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 69A0C46325E2863400170318 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -423,6 +438,8 @@
 			files = (
 				69A0C49325E3FF7400170318 /* MainViewController.swift in Sources */,
 				69A0C4C925E4074F00170318 /* BoughtPresenter.swift in Sources */,
+				692052F32639A8210004B616 /* ButtonViewCell.swift in Sources */,
+				69A1066226386CC600ADF76A /* CachedPurchase.swift in Sources */,
 				69A0C4D825E4083600170318 /* DetailViewController.swift in Sources */,
 				699E0F6E26346FA6002CA527 /* MainTabBarViewController.swift in Sources */,
 				69A0C48425E3FD6500170318 /* NetworkService.swift in Sources */,
@@ -443,7 +460,6 @@
 				69A0C4CE25E407B600170318 /* BoughtViewCell.swift in Sources */,
 				69A0C4D325E407E800170318 /* DetailPresenter.swift in Sources */,
 				69A0C4C025E406F700170318 /* SearchViewCell.swift in Sources */,
-				69A0C49925E401A400170318 /* ProductListView.swift in Sources */,
 				69A0C4A925E4060E00170318 /* ReviewPresenter.swift in Sources */,
 				699E0F73263478EA002CA527 /* SearchTableViewController.swift in Sources */,
 				69A0C4BB25E406A800170318 /* SearchPresenter.swift in Sources */,
@@ -651,6 +667,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		699F886226370EE400A72175 /* XCRemoteSwiftPackageReference "animated-tab-bar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Ramotion/animated-tab-bar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+		69A1065D26383CD500ADF76A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		699F886326370EE400A72175 /* RAMAnimatedTabBarController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 699F886226370EE400A72175 /* XCRemoteSwiftPackageReference "animated-tab-bar" */;
+			productName = RAMAnimatedTabBarController;
+		};
+		69A1065E26383CD500ADF76A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69A1065D26383CD500ADF76A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 69A0C45A25E2863400170318 /* Project object */;
 }

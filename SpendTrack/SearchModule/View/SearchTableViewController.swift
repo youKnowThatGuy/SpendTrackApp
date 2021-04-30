@@ -17,12 +17,23 @@ class SearchTableViewController: UITableViewController {
     var presenter: SearchPresenterProtocol!
     var searchController: UISearchController!
     var resultsTableController: SearchItemsViewController!
+    private var activityIndicator = UIActivityIndicatorView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupSpinner(spinner: activityIndicator)
         setupSearchBar()
         presenter.loadRecentSearches()
     }
+    
+    private func setupSpinner(spinner: UIActivityIndicatorView) {
+            spinner.hidesWhenStopped = true
+            spinner.style = .medium
+            spinner.color = .systemYellow
+            spinner.frame = view.bounds
+            spinner.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            view.addSubview(activityIndicator)
+        }
     
     private func setupSearchBar(){
         resultsTableController = SearchItemsViewController()
@@ -77,6 +88,7 @@ extension SearchTableViewController: SearchViewProtocol{
     
     func updateUI() {
         tableView.reloadData()
+        activityIndicator.stopAnimating()
     }
 }
 
@@ -89,9 +101,10 @@ extension SearchTableViewController: SuggestedSearch{
            return
        }
         searchField.text = word
-    presenter.loadItems(query: word)
-    searchController.dismiss(animated: true, completion: nil)
-    resultsTableController.showSuggestedSearches = false
+        activityIndicator.startAnimating()
+        presenter.loadItems(query: word)
+        searchController.dismiss(animated: true, completion: nil)
+        resultsTableController.showSuggestedSearches = false
     }
 }
 
