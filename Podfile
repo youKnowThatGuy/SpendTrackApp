@@ -8,4 +8,5 @@ target 'SpendTrack' do
 
 pod 'Charts'
 pod 'SCLAlertView'
+pod 'DropDown'
 end
