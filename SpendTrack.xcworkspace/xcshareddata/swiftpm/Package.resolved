@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RAMAnimatedTabBarController",
+        "repositoryURL": "https://github.com/Ramotion/animated-tab-bar",
+        "state": {
+          "branch": null,
+          "revision": "52174249fa7b296c0fce1114be8f34081b85ffc3",
+          "version": "5.2.0"
+        }
+      },
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
+        "state": {
+          "branch": null,
+          "revision": "44450a8f564d7c0165f736ba2250649ff8d3e556",
+          "version": "6.3.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
